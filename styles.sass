@@ -1,0 +1,80 @@
+/* VARIABLES */
+$default-list-style: none
+$font-base: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+$white: #fff
+$default-border-color: #ccc
+
+/* MIXINS */
+@mixin bg-size($back-size)
+	-webkit-background-size: $back-size
+	-moz-background-size: $back-size
+	-o-background-size: $back-size
+	background-size: $back-size
+
+
+
+/* BASE ELEMENTS */
+
+*
+	box-sizing: border-box
+
+html
+	background: url("imgs/rain_window.jpg") no-repeat center center fixed
+	+bg-size($back-size: cover)
+	opacity: 0.9
+	height: 100%
+	font-family: $font-base
+
+body
+	margin: 0
+
+.container
+	margin: 0 auto
+
+
+header
+	padding: 10px 0
+
+img
+	border: 0
+	max-width: 100%
+
+ol
+	list-style: $default-list-style
+	padding: 0
+	margin: 0
+
+li
+	list-style: $default-list-style
+
+/* COMPONENTS */
+
+container
+	margin: 0 auto
+
+.group
+	*zoom: 1
+	&:before, &:after
+		display: table
+		content: ""
+	&:after
+		clear: both
+
+.gardenplot
+
+.plot
+	height: 15%
+	width: 15%
+	border: 1px solid #ccc
+
+.1A
+
+.1B
+
+
+
+
+
+
+
+
